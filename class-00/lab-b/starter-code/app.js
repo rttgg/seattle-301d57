@@ -166,8 +166,8 @@ let newMessage = name => `Hello, ${name}!`;
 console.log(newMessage('Allie'));
 
 
-
-let Student = function(name, age, hometown) {
+//not constructive function
+let Student = (name, age, hometown) => {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
@@ -220,6 +220,7 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
+// the cosntructive function doesn't exist 
 // undifined: because "this" only works for object type consturctors and not function constructors.
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // undifined: because "this" only works for object type consturctors and not function constructors.
